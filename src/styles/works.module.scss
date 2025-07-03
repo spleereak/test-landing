@@ -1,0 +1,96 @@
+.works {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding-top: 40px;
+	padding-bottom: 40px;
+
+	&__title {
+		text-align: center;
+
+		h3 {
+			font-weight: 600;
+		}
+
+		p {
+			font-weight: 400;
+			color: #666666;
+			font-size: 20px;
+		}
+	}
+
+	&__content {
+		display: flex;
+		justify-content: space-between;
+		gap: 50px;
+		align-items: center;
+	}
+}
+
+.card {
+	max-width: 320px;
+	width: 100%;
+	border-radius: 16px;
+	position: relative;
+
+	&__image {
+		position: relative;
+		height: 380px;
+		overflow: hidden;
+
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			border-radius: 10px;
+		}
+	}
+
+	&__badge {
+		position: absolute;
+		bottom: 10px;
+		left: calc(50% - 20px);
+		width: 48px;
+		height: 48px;
+		background-color: #111111;
+		border-radius: 50%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		z-index: 2;
+
+		&__number {
+			color: #ffffff;
+			font-weight: 600;
+		}
+	}
+
+	&__content {
+		padding: 24px;
+	}
+
+	&__title {
+		margin: 0 0 8px 0;
+		line-height: 1.3;
+	}
+
+	&__description {
+		margin: 0;
+		line-height: 1.5;
+	}
+}
+
+.businessman {
+	object-position: right;
+	transform: scaleX(-1);
+}
+
+.warehouse {
+	object-position: right;
+}
+
+.inspiration {
+	object-position: 60%;
+	transform: scaleX(-1);
+}

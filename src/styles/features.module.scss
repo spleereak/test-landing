@@ -1,0 +1,43 @@
+.features {
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: 20px;
+	padding-bottom: 20px;
+
+	&__component {
+		display: flex;
+		gap: 30px;
+		align-items: center;
+	}
+
+	&__text {
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+
+		h3 {
+			font-weight: 600;
+			margin-bottom: 0;
+		}
+
+		p {
+			font-weight: 400;
+			margin-top: 0;
+		}
+	}
+}
+
+.features::before {
+	content: '';
+	background-color: #F2F5FF;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	height: 100%;
+	width: 100vw;
+	background-size: cover;
+	background-position: center;
+	z-index: -1;
+}

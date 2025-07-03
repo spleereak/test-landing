@@ -1,0 +1,56 @@
+.mailing_list {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	text-align: center;
+
+	&__title {
+		font-weight: bold;
+	}
+
+	&__description {
+		font-weight: 400;
+		color: #666666;
+	}
+}
+
+.mailing_list::before {
+	content: '';
+	background-color: #F2F5FF;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	height: 100%;
+	width: 100vw;
+	background-size: cover;
+	background-position: bottom;
+	z-index: -1;
+}
+
+.form_container {
+	display: flex;
+	gap: 0;
+	max-width: 500px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.email_input {
+	flex: 1;
+	padding: 16px 20px;
+	border: 2px solid #054C73;
+	border-right: none;
+}
+
+.submit_button {
+	padding: 16px 32px;
+	background-color: #011C42;
+	border: none;
+	color: #fff;
+	font-weight: bold;
+	cursor: pointer;
+}

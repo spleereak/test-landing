@@ -1,0 +1,22 @@
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.logo {
+	color: #054C73;
+	font-weight: 700;
+}
+
+.nav {
+	display: flex;
+	gap: 50px;
+
+	&__link {
+		text-decoration-line: none;
+		color: #333333;
+		font-size: 14px;
+		font-weight: 600;
+	}
+}
